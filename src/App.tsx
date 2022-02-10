@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import {Button} from "@mui/material";
+import Album from "./components/Album";
 
 function App() {
-    return <Button variant="contained">Hello World</Button>;
+    return <Album/>
 }
 
 export default App;
