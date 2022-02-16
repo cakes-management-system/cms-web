@@ -4,13 +4,14 @@ import Typography from "@mui/material/Typography";
 import {Cake} from "../../model/Cake";
 import {CardMedia} from "@mui/material";
 import React from "react";
+import {CAKE_IMAGE_URL} from "../../api/CakesApi";
 
 const CakeCard: React.FC<{ cake: Cake }> = ({cake}) => {
     return (
         <Card>
             <CardMedia
                 component="img"
-                src={cake.imageSrc}
+                src={`${CAKE_IMAGE_URL(cake.id)}`}
                 sx={{
                     height: 200
                 }}
